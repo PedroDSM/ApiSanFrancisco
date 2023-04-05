@@ -20,9 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/user/{id}', [RegisteredUserController::class, 'find_user']);
-
-Route::post('/codigo', [RegisteredUserController::class, 'verification_code']);
-Route::post('/codigo_web', [RegisteredUserController::class, 'codigo_web'])->name('verification_code_web');
 
 
