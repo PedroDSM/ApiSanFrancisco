@@ -15,7 +15,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+        <div class="min-h-screen bg-gray-100 dark:bg-gray-900 color">
             @include('layouts.navigation')
 
             <!-- Page Heading -->
@@ -34,3 +34,9 @@
         </div>
     </body>
 </html>
+
+<style>
+    .color{
+        background-color:rgb(17 0 39)
+    }
+</style>
